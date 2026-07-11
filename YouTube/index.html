@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Clone</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Material Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header class="navbar">
+        <div class="nav-left">
+            <span class="material-symbols-outlined menu-btn" id="menuBtn">menu</span>
+            <div class="logo-container">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/b/b8/YouTube_Logo_2017.svg" alt="YouTube Logo" class="logo">
+            </div>
+        </div>
+
+        <div class="nav-center">
+            <div class="search-box">
+                <input type="text" placeholder="Search">
+                <button class="search-btn">
+                    <span class="material-symbols-outlined">search</span>
+                </button>
+            </div>
+            <button class="mic-btn">
+                <span class="material-symbols-outlined">mic</span>
+            </button>
+        </div>
+
+        <div class="nav-right">
+            <span class="material-symbols-outlined">video_call</span>
+            <span class="material-symbols-outlined">notifications</span>
+            <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Felix" alt="Profile" class="profile-pic">
+        </div>
+    </header>
+
+    <!-- Main Layout Container -->
+    <div class="main-layout">
+        <!-- Sidebar -->
+        <aside class="sidebar" id="sidebar">
+            <div class="nav-link active">
+                <span class="material-symbols-outlined">home</span>
+                <span>Home</span>
+            </div>
+            <div class="nav-link">
+                <span class="material-symbols-outlined">explore</span>
+                <span>Explore</span>
+            </div>
+            <div class="nav-link">
+                <span class="material-symbols-outlined">subscriptions</span>
+                <span>Subscriptions</span>
+            </div>
+            <hr>
+            <div class="nav-link">
+                <span class="material-symbols-outlined">video_library</span>
+                <span>Library</span>
+            </div>
+            <div class="nav-link">
+                <span class="material-symbols-outlined">history</span>
+                <span>History</span>
+            </div>
+        </aside>
+
+        <!-- Main Content Area -->
+        <main class="content-area">
+            <!-- Category Filters -->
+            <div class="categories">
+                <button class="category-btn active">All</button>
+                <button class="category-btn">Gaming</button>
+                <button class="category-btn">Music</button>
+                <button class="category-btn">Live</button>
+                <button class="category-btn">Programming</button>
+                <button class="category-btn">News</button>
+                <button class="category-btn">Podcasts</button>
+                <button class="category-btn">Gadgets</button>
+            </div>
+
+            <!-- Video Grid -->
+            <div class="video-grid" id="videoGrid">
+                <!-- Videos injected via JavaScript -->
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
