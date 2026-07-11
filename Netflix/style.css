@@ -1,0 +1,31 @@
+
+        /* Custom scrollbar to match Netflix UI */
+        ::-webkit-scrollbar { width: 8px; height: 8px; }
+        ::-webkit-scrollbar-track { background: #141414; }
+        ::-webkit-scrollbar-thumb { background: #555; border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: #888; }
+        
+        body { background-color: #141414; color: white; overflow-x: hidden; }
+        
+        .row-container {
+            display: flex;
+            overflow-x: auto;
+            scroll-behavior: smooth;
+            padding: 20px 0 20px 20px;
+        }
+        .row-container::-webkit-scrollbar { display: none; }
+        
+        .movie-card {
+            flex: 0 0 auto;
+            width: 200px;
+            margin-right: 10px;
+            transition: transform 0.3s;
+            cursor: pointer;
+        }
+        .movie-card:hover, .movie-card:focus {
+            transform: scale(1.08);
+            outline: 2px solid white;
+        }
+        
+        /* Utility to hide pages */
+        .hidden-page { display: none !important; }
